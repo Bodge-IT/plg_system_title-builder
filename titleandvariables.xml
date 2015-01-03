@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>plg_system_titleandvariables</name>
+	<author>Phil Walton</author>
+	<creationDate>October 2014</creationDate>
+	<copyright>(C) 2014 Phil Walton. All rights reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>phil@softforge.co.uk</authorEmail>
+	<authorUrl>http://www.softforge.co.uk/</authorUrl>
+	<version>3.0</version>
+	<description>Title and Variables inclusion</description>
+	<files>
+		<filename plugin="titleandvariables">titleandvariables.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_content_titleandvariables.ini</language>
+		<language tag="en-GB">en-GB.plg_content_titleandvariables.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		<fieldset name="basic">		
+			<field name="param1" type="text" default="" label="TAV_PARAM1" description="TAV_PARAM1_DESC" />
+			<field name="param2" type="text" default="" label="TAV_PARAM2" description="TAV_PARAM2_DESC" />
+			<field name="param3" type="text" default="" label="TAV_PARAM3" description="TAV_PARAM3_DESC" />
+		</fieldset>
+		</fields>
+	</config>
+</extension>
